@@ -1,0 +1,18 @@
+<form [formGroup]="formBranch" (ngSubmit)="getBranch()">
+    <div>
+        <label>Latitude</label>
+        <input type="text" formControlName="latitude">
+    </div>
+    <div>
+        <label>Longitude</label>
+        <input type="text" formControlName="longitude"></div>
+    <div>
+        <button [disabled]="!formBranch.valid" type="submit">
+            Cosultar
+        </button>
+    </div>
+    <div class="error" *ngIf="error">{{ msgError }}</div>
+    
+    <div *ngIf="successful">
+        Resultado : <br />{{ msgJson }}</div>
+</form>
