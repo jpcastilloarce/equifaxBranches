@@ -8,7 +8,7 @@ npm install
 ng serve
 ```
 
-## Browse your local URI, usually http://localhost:4200/l
+## Browse your local URI, usually http://localhost:4200/
 ```
 Test data for login form:
 username: user, password: 123456
